@@ -4,21 +4,42 @@
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        #name {
+            padding-right: 1000px;
+            padding-left: 0;
+        }
+    </style>
 </head>
 
-<body>
-    <ul id="topbar">
-        <li>
-            <p>Alan Zheng</p>
-        </li>
-        <li>
-            <ul id="mainbar">
-                <li><a href="index.html" class="main-buttons">Home</a></li>
-                <li><a href="about.html" class="main-buttons">About</a></li>
-                <li><a href="projects.html" class="main-buttons">Projects</a></li>
+<body id="main">
+    <div class="scroll-containter">
+        <section class="scroll-section" id="section-1">
+            <ul id="topbar">
+                <li id="name">
+                    <p>Alan Zheng</p>
+                </li>
+                <li>
+                    <ul id="mainbar">
+                        <li><a href="index.html" class="main-buttons">Home</a></li>
+                        <li><a href="about.html" class="main-buttons">About</a></li>
+                        <li><a href="projects.html" class="main-buttons">Projects</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
+            <p style="font-size: 70px">Hello, I am Alan Zheng</p>
+        </section>
+
+        <section class="scroll-section" id="section-2">
+            <p>Test</p>
+        </section>
+    </div>
+
+    <nav id="scroll-bar">
+        <a class="dot"></a>
+        <a class="dot"></a>
+        <a class="dot"></a>
+    </nav>
 </body>
 
 </html>

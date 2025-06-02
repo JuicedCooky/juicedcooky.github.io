@@ -11,7 +11,7 @@
     margin: 25px 0;
     padding: 0 100px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .main-buttons {
@@ -24,10 +24,45 @@
     color: aqua;
 }
 
+.scroll-containter {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+
+    scrollbar-width: none;
+
+}
+
+.scroll-section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
 li{
-    padding: 0 30px;
+    padding: 0 100px;
 }
 
 body {
     font-family: Consolas, monaco, monospace;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    display: block;
+}
+
+#main {
+    /*flex-wrap: wrap; */
+    background-image: url(mymind-XUlsF9LYeVk-unsplash.jpg);
+    display: flex;
+}
+
+#scroll-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
