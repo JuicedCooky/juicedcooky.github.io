@@ -1,11 +1,33 @@
 #mainbar {
     list-style-type: none;
-    margin: 0;
+    margin: 25px 0;
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
+#topbar {
+    list-style-type: none;
+    margin: 25px 0;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-buttons {
+    background-color: darkblue;
+    /*background-size: 200% 200%;*/
+    padding: 10px;
+    font-size: larger;
+    border-radius: 7px;
+    text-decoration: none;
+    color: aqua;
+}
+
 li{
     padding: 0 30px;
+}
+
+body {
+    font-family: Consolas, monaco, monospace;
 }
