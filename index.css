@@ -54,6 +54,10 @@ body {
     display: block;
 }
 
+.dot.active {
+  background-color: #4caf50;
+}
+
 #main {
     /*flex-wrap: wrap; */
     background-image: url(mymind-XUlsF9LYeVk-unsplash.jpg);
