@@ -1,5 +1,4 @@
 console.log("test");
-
 const sections = document.querySelectorAll("section");
 const dots = document.querySelectorAll(".dot");
 
