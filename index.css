@@ -1,15 +1,15 @@
 #mainbar {
     list-style-type: none;
-    margin: 25px 0;
-    padding: 0;
+    margin: 2.5vh 0;
+    /*padding: 0 10px;*/
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 #topbar {
     list-style-type: none;
     margin: 25px 0;
-    padding: 0 50px;
+    padding: 0 5vw;
     display: flex;
     justify-content: left;
 }
@@ -22,15 +22,14 @@
     border-radius: 7px;
     text-decoration: none;
     color: aqua;
+    margin-right: 10vw;
 }
 
 .scroll-containter {
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
-
     scrollbar-width: none;
-
 }
 
 .scroll-section {
@@ -102,9 +101,22 @@ body::-webkit-scrollbar {
 }
 
 .slide-container {
-
+    background-color: red;
+    position: relative;
+    margin: auto;
+    width: 75vw;
+    height: 75vh;
 }
 
 .slide {
     display: none;
+}
+
+.previous, .next {
+    margin-top: -22px;
+    position: absolute;
+}
+
+.next {
+    right: 0;
 }
