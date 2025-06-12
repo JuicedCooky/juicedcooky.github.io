@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
 
 #main {
     /*flex-wrap: wrap; */
-    background-image: url(mymind-XUlsF9LYeVk-unsplash.jpg);
+    background-image: url(images/background.jpg);
     display: flex;
 }
 
@@ -99,4 +99,12 @@ body::-webkit-scrollbar {
     object-fit: cover;
     width: 100%;
     flex-shrink: 0;
+}
+
+.slide-container {
+
+}
+
+.slide {
+    display: none;
 }

@@ -32,13 +32,20 @@
 
         <section class="scroll-section" id="section-2">
             <p style="font-size: 70px">Projects</p>
-            <div class="scroll-container">
-                <button class="previous" onclick="scrollProject(1)">&#10094;</button>
+            <div class="slide-container">
+                <button class="previous" onclick="nextSlide(-1)">&#10094;</button>
                 <div id="scroll-container-track">
-                    <img src="Screenshot%202025-06-10%20170357.png">
-                    <img src="Screenshot%202025-06-10%20171116.png">
+                    <div class="slide">
+                        <img src="images/depth_estimation.png">
+                    </div>
+                    <div class="slide">
+                        <img src="images/map_nav_proj.png">
+                    </div>
+                    <div class="slide">
+                        <img src="images/test.png">
+                    </div>
                 </div>
-                <button class="next">&#10095;</button>
+                <button class="next" onclick="nextSlide(1)">&#10095;</button>
             </div>
         </section>
     </div>
@@ -47,7 +54,8 @@
         <a class="dot active" id="dot-1"></a>
         <a class="dot" id="dot-2"></a>
     </nav>
-    <script src="index.js"></script>
+    <script src="dot_scrollbar.js"></script>
+    <script src="slideshow.js"></script>
 </body>
 
 </html>
