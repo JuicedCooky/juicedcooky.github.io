@@ -13,6 +13,7 @@
 </head>
 
 <body id="main">
+    <!--<img src="images/background.jpg" id="background-image"/>-->
     <div class="scroll-containter">
         <section class="scroll-section" id="section-1">
             <ul id="topbar">
@@ -21,6 +22,7 @@
                 </li>
                 <li>
                     <ul id="mainbar">
+
                         <li><a href="index.html" class="main-buttons">Home</a></li>
                         <li><a href="about.html" class="main-buttons">About</a></li>
                         <li><a href="projects.html" class="main-buttons">Projects</a></li>
@@ -34,7 +36,6 @@
             <p style="font-size: 70px">Projects</p>
             <div class="slide-container">
                 <button class="previous" onclick="nextSlide(-1)">&#10094;</button>
-                <div id="scroll-container-track">
                     <div class="slide">
                         <img src="images/depth_estimation.png">
                     </div>
@@ -44,7 +45,6 @@
                     <div class="slide">
                         <img src="images/test.png">
                     </div>
-                </div>
                 <button class="next" onclick="nextSlide(1)">&#10095;</button>
             </div>
         </section>
@@ -54,6 +54,7 @@
         <a class="dot active" id="dot-1"></a>
         <a class="dot" id="dot-2"></a>
     </nav>
+    <script src="mouse_movement_parallax.js"></script>
     <script src="dot_scrollbar.js"></script>
     <script src="slideshow.js"></script>
 </body>

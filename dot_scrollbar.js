@@ -1,6 +1,7 @@
-console.log("test");
 const sections = document.querySelectorAll("section");
 const dots = document.querySelectorAll(".dot");
+
+console.log(`sections:${sections.length}`);
 
 
 //Scroll dot bar
