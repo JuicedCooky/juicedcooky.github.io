@@ -100,20 +100,24 @@ body::-webkit-scrollbar {
     display: flex;
 }
 
+/*
 .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 300px; /* adjust as needed */
+  width: 300px;  adjust as needed
   margin: auto;
   overflow: hidden;
 }
+*/
+/*
 .carousel-track {
   display: flex;
   transition: transform 0.4s ease-in-out;
   width: 100%;
 }
+*/
 
 .scroll-container-track img{
     object-fit: cover;
@@ -124,13 +128,23 @@ body::-webkit-scrollbar {
 .slide-container {
     background-color: red;
     position: relative;
-    margin: auto;
+    /*margin: auto;*/
     width: 75vmin;
     height: 75vmin;
     aspect-ratio: 1/1;
     /*align-content: center;*/
     justify-content: center;
     display: flex;
+}
+
+.projects {
+    padding-left: 2.5vw;
+    justify-content: left;
+    display: flex;
+}
+
+.project-description {
+
 }
 
 .slide {
