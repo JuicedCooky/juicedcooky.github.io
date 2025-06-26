@@ -22,23 +22,27 @@
     padding: 0 5vw;
     display: flex;
     justify-content: left;
+    border-bottom-style: solid;
 }
 
 .main-buttons {
-    background-color: #0d160b;
+    /*background-color: #0d160b;*/
     /*background-size: 200% 200%;*/
-    padding: 10px;
+    padding: 15px;
     font-size: larger;
-    border-radius: 7px;
+    font: bolder;
+    /*border-radius: 7px;*/
     text-decoration: none;
-    color: aqua;
+    color: black;
     margin-right: 10vw;
     transform: skew(-50deg);
+    font-weight: 1000;
     /*cursor: pointer;*/
 }
 
 .main-buttons:hover{
-    background-color: #FFFCE8;
+    /*background-color: #FFFCE8;*/
+    color: wheat;
 }
 
 .main-buttons::before{
