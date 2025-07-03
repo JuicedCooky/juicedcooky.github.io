@@ -49,11 +49,19 @@
     background-color: #697A21;
 }
 
-.scroll-containter {
+.scroll-container {
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
     scrollbar-width: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll-container.snap-disabled{
+    scroll-snap-type: none;
 }
 
 .scroll-section {
@@ -75,15 +83,15 @@ body::-webkit-scrollbar {
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #aaa;
+    width: 17.5px;
+    height: 17.5px;
+    background-color: rgba(114, 89, 115, 0.53);
     border-radius: 50%;
     display: block;
 }
 
 .dot.active {
-  background-color: #4caf50;
+  background-color: #c500d3;
 }
 
 #background-image {
