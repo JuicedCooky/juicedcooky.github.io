@@ -13,28 +13,36 @@
     margin: 2.5vh 0;
     /*padding: 0 10px;*/
     display: flex;
+    gap: 2.5vw;
     /*justify-content: center;*/
 }
 
+
+
 #topbar {
     list-style-type: none;
-    margin: 25px 0;
-    padding: 0 5vw;
-    display: flex;
-    justify-content: left;
+    padding: 0 2.5vw;
+    display: inline-flex;
     border-bottom-style: solid;
+    width: 100vw;
+    gap: 10vw;
+}
+
+#name {
+    padding: 0 0 0 0;
+    align-content: center;
 }
 
 .main-buttons {
     /*background-color: #0d160b;*/
     /*background-size: 200% 200%;*/
-    padding: 15px;
+    padding: 0vw;
     font-size: larger;
     font: bolder;
     /*border-radius: 7px;*/
     text-decoration: none;
     color: black;
-    margin-right: 10vw;
+    margin-right: 2.5vw;
     transform: skew(-50deg);
     font-weight: 1000;
     /*cursor: pointer;*/
