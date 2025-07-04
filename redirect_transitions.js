@@ -44,7 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const y_scroll = target_location.offsetTop;
 
-                scrollTo(container, y_scroll, 600);
+                scrollTo(container, y_scroll, 1800);
+            });
+        });
+        document.querySelectorAll(".dot").forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target_location = document.querySelector(this.getAttribute("href"));
+
+                const y_scroll = target_location.offsetTop;
+
+                scrollTo(container, y_scroll, 1800);
             });
         });
     }

@@ -7,6 +7,9 @@
 </head>
 
 <body id="main">
+    <video id="background-video">
+        <source src="images/smoke.mp4" type="video/mp4"/>
+    </video>
     <!--<img src="images/background.jpg" id="background-image"/>-->
     <div class="scroll-container">
         <section class="scroll-section" id="section-1">
@@ -16,7 +19,7 @@
                 </li>
                 <li>
                     <ul id="mainbar">
-                        <li><a href="index.html" class="main-buttons">Home</a></li>
+                        <li><a href="#section-1" class="main-buttons">Home</a></li>
                         <li><a href="#section-2" class="main-buttons">About</a></li>
                         <li><a href="#section-3" class="main-buttons">Projects</a></li>
                         <li><a href="#section-4" class="main-buttons">Links</a></li>
@@ -67,17 +70,21 @@
                         </div>
                     <button class="next" onclick="nextSlide(1)">&#10095;</button>
                 </div>
-                <div class="project-description">
-                    Test
+                <div id="project-text-container">
+                    <p id="project-title">
+                    <p id="project-description">
                 </div>
             </div>
+        </section>
+        <section class="scroll-section" id="section-4">
         </section>
     </div>
 
     <nav id="scroll-bar">
-        <a class="dot active" id="dot-1"></a>
-        <a class="dot" id="dot-2"></a>
-        <a class="dot" id="dot-3"></a>
+        <a class="dot active" href="#section-1" id="dot-1"></a>
+        <a class="dot" href="#section-2" id="dot-2"></a>
+        <a class="dot" href="#section-3" id="dot-3"></a>
+        <a class="dot" href="#section-4" id="dot-4"></a>
     </nav>
     <script src="mouse_movement_parallax.js"></script>
     <script src="dot_scrollbar.js"></script>

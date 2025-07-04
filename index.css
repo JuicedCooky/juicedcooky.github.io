@@ -1,13 +1,21 @@
 
 #main {
     /*flex-wrap: wrap; */
-    background-image: url(images/background.jpg);
+    /*background-image: url(images/smoke.mp4);*/
     background-position: center;
     background-size: 100% 100%;
     display: flex;
     /*transform: translateX(10px);*/
 }
-
+#background-video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
 #mainbar {
     list-style-type: none;
     margin: 2.5vh 0;
@@ -24,7 +32,7 @@
     padding: 0 2.5vw;
     display: inline-flex;
     border-bottom-style: solid;
-    width: 100vw;
+    width: 90vw;
     gap: 10vw;
 }
 
@@ -66,6 +74,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .scroll-container.snap-disabled{
@@ -163,10 +172,14 @@ body::-webkit-scrollbar {
     display: flex;
 }
 
-.project-description {
-
+#project-description {
+    padding-left: 2vw;
 }
-
+#project-title {
+    padding-left: 2vw;
+}
+#project-text-container {
+}
 .slide {
     display: none;
     object-fit: contain;

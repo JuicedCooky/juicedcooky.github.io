@@ -16,5 +16,12 @@ function showSlide(index){
     });
 
     slides[index-1].style.display = "block";
+
+    fetch("projects.json").then(response => response.json()).then(data =>{
+        document.getElementById("project-title").textContent = data.projects[slide_index-1].title;
+        document.getElementById("project-description").textContent = data.projects[slide_index-1].description;
+
+    });
     return index;
 }
+
