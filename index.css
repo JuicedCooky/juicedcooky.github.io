@@ -207,4 +207,6 @@ body::-webkit-scrollbar {
 
 .next {
     right: 0;
+    border: hidden;
+    background: grey;
 }

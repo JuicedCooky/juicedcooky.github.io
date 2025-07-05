@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "depth-estimation",
-            "description": "test"
+            "description": "This project explores monocular depth estimation using a lightweight convolutional Residual Encoder-Decoder Network with only ~223k parameters. Trained on the Make3D dataset, the model predicts depth maps from single outdoor images. It incorporates histogram equalization for preprocessing and uses LeakyReLU activation to retain image detail. A hybrid loss function combining L1, Structural Similarity, Gradient, and Scale-Invariant losses—with adaptive weighting—guides training. The model successfully distinguishes general depth regions (near, mid, far) but struggles with cluttered scenes and varying lighting conditions. Despite its simplicity, the network demonstrates effective depth perception from monocular input."
         }
     ]
 }
