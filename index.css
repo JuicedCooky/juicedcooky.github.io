@@ -155,7 +155,7 @@ body::-webkit-scrollbar {
 }
 
 .slide-container {
-    background-color: red;
+    /*background-color: red;*/
     position: relative;
     /*margin: auto;*/
     width: 75vmin;
@@ -196,17 +196,53 @@ body::-webkit-scrollbar {
     /*transform: scale();*/
 }
 
+@keyframes bounceL {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+}
+@keyframes bounceR {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
 .previous, .next {
     /*margin-top: -22px;*/
     margin-top: 50%;
     position: absolute;
+    top: -30px;
+    background-color: rgba(0, 0, 0, 0);
 }
 .previous {
     left: 0;
+    border: hidden;
 }
 
 .next {
     right: 0;
     border: hidden;
-    background: grey;
+}
+
+.next:hover {
+    /*transform: translateX(5px);*/
+    animation: bounceR 0.8s infinite;
+}
+.previous:hover {
+    animation: bounceL 0.8s infinite;
+}
+
+/*
+#next-circle:hover{
+    stroke: indianred !important;
+}
+*/
+#next-svg:hover circle, #previous-svg:hover circle{
+    stroke: indianred !important;
 }
