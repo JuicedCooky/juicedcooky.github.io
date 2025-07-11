@@ -7,9 +7,13 @@
 </head>
 
 <body id="main">
+    <div id="points-container">
+    </div>
+    <!--
     <video id="background-video">
         <source src="images/smoke.mp4" type="video/mp4"/>
     </video>
+    -->
     <!--<img src="images/background.jpg" id="background-image"/>-->
     <div class="scroll-container">
         <section class="scroll-section" id="section-1">
@@ -50,8 +54,14 @@
                 Interests:
             </p>
             <ul style="font-size: 20px">
-                <li>Motorcycles</li>
+                <li>Motorcycles
+                    <ul>
+                        <li>Currently riding a 2024 CB500F</li>
+                    </ul>
+                </li>
+
                 <li>Basketball</li>
+                <li>Coding (obviously)</li>
             </ul>
         </section>
         <section class="scroll-section" id="section-3">
@@ -72,7 +82,7 @@
                             <img src="images/map_nav_proj.png">
                         </div>
                         <div class="slide">
-                            <img src="images/test.png">
+                            <img src="images/multi_thread_transfer.png">
                         </div>
                     <button class="next" onclick="nextSlide(1)">
                         <svg height="50" width="50" id="next-svg">
@@ -102,6 +112,7 @@
     <script src="dot_scrollbar.js"></script>
     <script src="redirect_transitions.js"></script>
     <script src="slideshow.js"></script>
+    <script src="interactable_points.js"></script>
 </body>
 
 </html>

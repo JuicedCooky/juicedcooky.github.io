@@ -34,6 +34,7 @@
     border-bottom-style: solid;
     width: 90vw;
     gap: 10vw;
+    border-color: white;
 }
 
 #name {
@@ -49,7 +50,7 @@
     font: bolder;
     /*border-radius: 7px;*/
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     margin-right: 2.5vw;
     transform: skew(-50deg);
     font-weight: 1000;
@@ -88,11 +89,17 @@ html{
 
 li{
     padding: 0 50px;
+    color: white;
+}
+
+p {
+    color: white;
 }
 
 body {
     font-family: Consolas, monaco, monospace;
     padding: 20px 0 0 20px;
+    background-color: black;
 }
 
 body::-webkit-scrollbar {
@@ -105,10 +112,14 @@ body::-webkit-scrollbar {
     background-color: rgba(114, 89, 115, 0.53);
     border-radius: 50%;
     display: block;
+    transition: transform .35s;
+    transform: scaleY(1);
 }
 
 .dot.active {
-  background-color: #c500d3;
+    background-color: #c500d3;
+    transform: scaleY(1.5);
+    transition: transform .35s;
 }
 
 #background-image {
@@ -245,4 +256,13 @@ body::-webkit-scrollbar {
 */
 #next-svg:hover circle, #previous-svg:hover circle{
     stroke: indianred !important;
+}
+
+.point {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(203, 203, 203, 0.54);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
 }
