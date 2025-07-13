@@ -1,9 +1,11 @@
 const points = [];
 
-const max_width = window.outerWidth;
-const max_height = window.outerHeight;
+const max_width = window.innerWidth;
+const max_height = window.innerHeight;
 
 const point_size = 5;
+
+const point_speed = 0.33;
 
 function initDots(num_of_dots) {
     const container = document.getElementById("points-container");
@@ -14,8 +16,8 @@ function initDots(num_of_dots) {
         const dot = document.createElement("a");
         dot.classList.add("point");
 
-        const x = Math.random() * max_width;
-        const y = Math.random() * max_height;
+        const x = Math.random() * (max_width - point_size * 2) + point_size * 2;
+        const y = Math.random() * (max_height - point_size * 2) + point_size * 2;
 
         dot.style.left = x + "px";
         dot.style.top = y + "px";
@@ -27,8 +29,8 @@ function initDots(num_of_dots) {
             data:dot,
             x: x,
             y: y,
-            dx: (Math.random() - 0.5) * 0.33,
-            dy: (Math.random() - 0.5) * 0.33
+            dx: (Math.random() - 0.5) * point_speed,
+            dy: (Math.random() - 0.5) * point_speed
         }
         );
     }
@@ -49,13 +51,27 @@ function animate_points(){
         point.x += point.dx;
         point.y += point.dy;
 
-        if (point.x < 0 || point.x > max_width - point_size || Math.abs(mouse_x-point.x)>10)
-            point.dx *= -1;
-        if (point.y < 0 || point.y > max_height - point_size || Math.abs(mouse_y-point.y)>10)
-            point.dy *= -1;
+        const x_distance = point.x - mouse_x;
+        const y_distance = point.y - mouse_y;
 
+        const distance = Math.sqrt(x_distance * x_distance + y_distance * y_distance);
+        if (distance<50){
+            point.dx = x_distance / distance * 2;
+            point.dy = y_distance / distance * 2;
+        }
         point.data.style.left = point.x + "px";
         point.data.style.top = point.y + "px";
+
+        if (point.x < 0 || point.x > max_width - point_size)
+            point.dx *= -1;
+        if (point.y < 0 || point.y > max_height - point_size)
+            point.dy *= -1;
+        if (Math.abs(point.dx) > 0.5*point_speed){
+            point.dx -= Math.random()*point_speed/50;
+        }
+        if (Math.abs(point.dy) > 0.5*point_speed){
+            point.dy -= Math.random()*point_speed/50;
+        }
     });
 
     requestAnimationFrame(animate_points);
