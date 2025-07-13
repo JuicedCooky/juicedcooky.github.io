@@ -36,14 +36,22 @@ function initDots(num_of_dots) {
 
 initDots(100);
 
+let mouse_x = 0;
+let mouse_y = 0;
+
+document.addEventListener("mousemove", function(e) {
+    mouse_x = e.clientX;
+    mouse_y = e.clientY;
+});
+
 function animate_points(){
     points.forEach(point => {
         point.x += point.dx;
         point.y += point.dy;
 
-        if (point.x < 0 || point.x > max_width - point_size)
+        if (point.x < 0 || point.x > max_width - point_size || Math.abs(mouse_x-point.x)>10)
             point.dx *= -1;
-        if (point.y < 0 || point.y > max_height - point_size)
+        if (point.y < 0 || point.y > max_height - point_size || Math.abs(mouse_y-point.y)>10)
             point.dy *= -1;
 
         point.data.style.left = point.x + "px";
@@ -52,5 +60,6 @@ function animate_points(){
 
     requestAnimationFrame(animate_points);
 }
+
 
 animate_points();
