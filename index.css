@@ -7,6 +7,7 @@
     display: flex;
     /*transform: translateX(10px);*/
 }
+/*
 #background-video {
     position: fixed;
     left: 0;
@@ -16,6 +17,7 @@
     object-fit: cover;
     z-index: -1;
 }
+*/
 #mainbar {
     list-style-type: none;
     margin: 2.5vh 0;
@@ -40,6 +42,7 @@
 #name {
     padding: 0 0 0 0;
     align-content: center;
+    /*background-color: black;*/
 }
 
 .main-buttons {
@@ -99,6 +102,8 @@ p {
 body {
     font-family: Consolas, monaco, monospace;
     padding: 20px 0 0 20px;
+    /*background-color: black;*/
+    z-index: 1;
     background-color: black;
 }
 
@@ -261,8 +266,18 @@ body::-webkit-scrollbar {
 .point {
     width: 5px;
     height: 5px;
-    background-color: rgba(203, 203, 203, 0.54);
+    background-color: rgba(170, 172, 198, 1);
     border-radius: 50%;
     position: absolute;
+}
+
+#points-container {
     z-index: -1;
+    position: absolute;
+    background-color: transparent;
+}
+
+#background {
+    /*background-color: black;*/
+    z-index: -2;
 }
