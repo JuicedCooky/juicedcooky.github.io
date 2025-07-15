@@ -6,18 +6,15 @@
     background-size: 100% 100%;
     display: flex;
     /*transform: translateX(10px);*/
+    z-index: 2;
+    background-color: transparent;
+    position: absolute;
 }
-/*
-#background-video {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+
+* {
+    background-color: transparent;
+    scrollbar-width: none;
 }
-*/
 #mainbar {
     list-style-type: none;
     margin: 2.5vh 0;
@@ -97,14 +94,14 @@ li{
 
 p {
     color: white;
+    background-color: transparent;
 }
 
 body {
     font-family: Consolas, monaco, monospace;
     padding: 20px 0 0 20px;
     /*background-color: black;*/
-    z-index: 1;
-    background-color: transparent;
+    /*background-color: black;*/
 }
 
 body::-webkit-scrollbar {
@@ -272,12 +269,17 @@ body::-webkit-scrollbar {
 }
 
 #points-container {
-    z-index: -1;
+    z-index: 1;
     position: absolute;
-    /*background-color: transparent;*/
+    background-color: transparent;
 }
 
 #background {
     background-color: black;
-    z-index: -2;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    top: 0;
+    left: 0;
 }
