@@ -15,6 +15,7 @@
     background-color: transparent;
     scrollbar-width: none;
 }
+
 #mainbar {
     list-style-type: none;
     margin: 2.5vh 0;
@@ -70,12 +71,16 @@
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
-    scrollbar-width: none;
 }
 
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+body, html {
+    overflow-y: hidden;
+    scrollbar-width: none;
 }
 
 .scroll-container.snap-disabled{
@@ -132,6 +137,7 @@ body::-webkit-scrollbar {
 }
 
 #scroll-bar {
+    padding-right: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
