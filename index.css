@@ -283,8 +283,8 @@ body::-webkit-scrollbar {
 #background {
     background-color: black;
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     z-index: 0;
     top: 0;
     left: 0;
