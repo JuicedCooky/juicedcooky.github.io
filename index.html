@@ -17,88 +17,100 @@
         <!--<img src="images/background.jpg" id="background-image"/>-->
         <div class="scroll-container">
             <section class="scroll-section" id="section-1">
-                <ul id="topbar">
-                    <li id="name">
-                        Alan Zheng
-                    </li>
-                    <li>
-                        <ul id="mainbar">
-                            <li><a href="#section-1" class="main-buttons">Home</a></li>
-                            <li><a href="#section-2" class="main-buttons">About</a></li>
-                            <li><a href="#section-3" class="main-buttons">Projects</a></li>
-                            <li><a href="#section-4" class="main-buttons">Links</a></li>
+                <div class="scroll-section-animation expand">
+                    <ul id="topbar">
+                        <li id="name">
+                            Alan Zheng
+                        </li>
+                        <li>
+                            <ul id="mainbar">
+                                <li><a href="#section-1" class="main-buttons">Home</a></li>
+                                <li><a href="#section-2" class="main-buttons">About</a></li>
+                                <li><a href="#section-3" class="main-buttons">Projects</a></li>
+                                <li><a href="#section-4" class="main-buttons">Links</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="homepage-content">
+                        <p style="font-size: 70px">Hello, I am Alan Zheng</p>
+                        <p style="font-size: 24px">
+                            I am a Co-op Student at Ontario Tech University pursing Computer Science. <br>
+                            <br>
+                            This is my personal website, with the main purpose of expanding my portfolio and web-design.
+                            <br>
+                            <br>
+                            I have experience with creating neural-network models, mainly dealing with image encoding/decoding models,
+                            in specific variational-autoencoders.
+                            <br>
+                            <br>
+                            Some other subjects I have worked on are:
+                        </p>
+                        <ul style="font-size: 20px">
+                            <li>Multi-threading</li>
+                            <li>Network connections</li>
+                            <li>App development (Android/Apple)</li>
                         </ul>
-                    </li>
-                </ul>
-                <p style="font-size: 70px">Hello, I am Alan Zheng</p>
-                <p style="font-size: 24px">
-                    I am a Co-op Student at Ontario Tech University pursing Computer Science. <br>
-                    <br>
-                    This is my personal website, with the main purpose of expanding my portfolio and web-design.
-                    <br>
-                    <br>
-                    I have experience with creating neural-network models, mainly dealing with image encoding/decoding models,
-                    in specific variational-autoencoders.
-                    <br>
-                    <br>
-                    Some other subjects I have worked on are:
-                </p>
-                <ul style="font-size: 20px">
-                    <li>Multi-threading</li>
-                    <li>Network connections</li>
-                </ul>
+                    </div>
+                </div>
             </section>
             <section class="scroll-section" id="section-2">
-                <p style="font-size: 70px">About Me</p>
-                <p style="font-size: 24px">
-                    Interests:
-                </p>
-                <ul style="font-size: 20px">
-                    <li>Motorcycles
-                        <ul>
-                            <li>Currently riding a 2024 CB500F</li>
-                        </ul>
-                    </li>
+                <div class="scroll-section-animation expand">
+                    <p style="font-size: 70px">About Me</p>
+                    <p style="font-size: 24px">
+                        Interests:
+                    </p>
+                    <ul style="font-size: 20px">
+                        <li>Motorcycles
+                            <ul>
+                                <li>Currently riding a 2024 CB500F</li>
+                            </ul>
+                        </li>
 
-                    <li>Basketball</li>
-                    <li>Coding (obviously)</li>
-                </ul>
+                        <li>Basketball</li>
+                        <li>Coding (obviously)</li>
+                    </ul>
+                </div>
             </section>
             <section class="scroll-section" id="section-3">
-                <p style="font-size: 70px">Projects</p>
-                <div class=projects>
-                    <div class="slide-container">
-                        <button class="previous" onclick="nextSlide(-1)">
-                            <svg height="50" width="50" id="previous-svg">
-                                <circle cx="25" cy="25" r="20" stroke="gray" stroke-width="2" fill="transparent" id="next-circle"/>
-                                <path fill="black"
-                                      d="M 30 24 L 22 24 L 23 21 L 19 25 L 23 29 L 22 26 L 30 26 Z"></path>
-                            </svg>
-                        </button>
-                            <div class="slide">
-                                <img src="images/depth_estimation.png">
-                            </div>
-                            <div class="slide">
-                                <img src="images/map_nav_proj.png">
-                            </div>
-                            <div class="slide">
-                                <img src="images/multi_thread_transfer.png">
-                            </div>
-                        <button class="next" onclick="nextSlide(1)">
-                            <svg height="50" width="50" id="next-svg">
-                                <circle cx="25" cy="25" r="20" stroke="gray" stroke-width="2" fill="transparent" id="previous-circle"/>
-                                <path fill="black"
-                                      d="M 19 26 L 27 26 L 26 29 L 30 25 L 26 21 L 27 24 L 19 24 Z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="project-text-container">
-                        <p id="project-title">
-                        <p id="project-description">
+                <div class="scroll-section-animation expand">
+
+                    <p style="font-size: 70px">Projects</p>
+                    <div class=projects>
+                        <div class="slide-container">
+                            <button class="previous" onclick="nextSlide(-1)">
+                                <svg height="50" width="50" id="previous-svg">
+                                    <circle cx="25" cy="25" r="20" stroke="gray" stroke-width="2" fill="transparent" id="next-circle"/>
+                                    <path fill="black"
+                                          d="M 30 24 L 22 24 L 23 21 L 19 25 L 23 29 L 22 26 L 30 26 Z"></path>
+                                </svg>
+                            </button>
+                                <div class="slide">
+                                    <img src="images/depth_estimation.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/map_nav_proj.png">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/multi_thread_transfer.png">
+                                </div>
+                            <button class="next" onclick="nextSlide(1)">
+                                <svg height="50" width="50" id="next-svg">
+                                    <circle cx="25" cy="25" r="20" stroke="gray" stroke-width="2" fill="transparent" id="previous-circle"/>
+                                    <path fill="black"
+                                          d="M 19 26 L 27 26 L 26 29 L 30 25 L 26 21 L 27 24 L 19 24 Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="project-text-container">
+                            <p id="project-title">
+                            <p id="project-description">
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="scroll-section" id="section-4">
+                <div class="scroll-section-animation dot">
+                </div>
             </section>
         </div>
 

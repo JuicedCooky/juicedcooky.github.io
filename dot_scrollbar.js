@@ -19,6 +19,8 @@ const callback = (entries, observer) => {
                     dot.classList.add("active");
                 }
             });
+
+            entry.target.classList.add("visible");
         }
     });
 };
@@ -27,4 +29,25 @@ const observer = new IntersectionObserver(callback, options);
 
 sections.forEach(section => {
     observer.observe(section);
+});
+
+const expand_observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('visible');
+            void entry.target.offsetWidth;
+            entry.target.classList.add('visible');
+        }
+        else{
+            entry.target.classList.remove('visible');
+        }
+    });
+}, {
+    threshold: 0.5,
+});
+
+const section_content = document.querySelectorAll('.expand');
+
+section_content.forEach(section => {
+    expand_observer.observe(section);
 });
