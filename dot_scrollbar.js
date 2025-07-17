@@ -34,8 +34,6 @@ sections.forEach(section => {
 const expand_observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.remove('visible');
-            void entry.target.offsetWidth;
             entry.target.classList.add('visible');
         }
         else{
@@ -43,10 +41,15 @@ const expand_observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.5,
+    threshold: 0.33,
 });
 
 const section_content = document.querySelectorAll('.expand');
+const slide_content = document.querySelectorAll('.slide-transition');
+
+slide_content.forEach(section => {
+    expand_observer.observe(section);
+});
 
 section_content.forEach(section => {
     expand_observer.observe(section);

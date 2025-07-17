@@ -309,3 +309,28 @@ body::-webkit-scrollbar {
 .expand.visible {
     animation: expand .6s ease-out forwards;
 }
+
+#homepage-content {
+    background: linear-gradient(to right, rgba(158, 174, 188, 0.21), black);
+    /*background-color: rgba(158, 174, 188, 0.21);*/
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px;
+}
+
+.slide-transition {
+    transform: translateX(-60vw);
+}
+
+@keyframes slide{
+    0% {
+        transform: translateX(-60vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-transition.visible {
+    animation: slide 0.75s ease-out 0.8s forwards;
+}
