@@ -31,7 +31,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <div id="homepage-content" class="slide">
+                    <div id="homepage-content" class="slide-transition-animation">
                         <p style="font-size: 70px">Hello, I am Alan Zheng</p>
                         <p style="font-size: 24px">
                             I am a Co-op Student at Ontario Tech University pursing Computer Science. <br>
@@ -109,7 +109,9 @@
                 </div>
             </section>
             <section class="scroll-section" id="section-4">
-                <div class="scroll-section-animation dot">
+                <div id="input-field-container">
+                    <textarea id="contact-text-form" class="input-field"></textarea>
+                    <input type="submit" value="submit" class="input-field" id="submit-button">
                 </div>
             </section>
         </div>
@@ -124,11 +126,11 @@
     <div id="points-container"></div>
     <div id="background"></div>
 
-    <script src="mouse_movement_parallax.js"></script>
-    <script src="dot_scrollbar.js"></script>
-    <script src="redirect_transitions.js"></script>
-    <script src="slideshow.js"></script>
-    <script src="interactable_points.js"></script>
+    <script src="js/mouse_movement_parallax.js"></script>
+    <script src="js/dot_scrollbar.js"></script>
+    <script src="js/redirect_transitions.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/interactable_points.js"></script>
 </body>
 
 </html>

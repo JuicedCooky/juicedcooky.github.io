@@ -45,7 +45,7 @@ const expand_observer = new IntersectionObserver((entries) => {
 });
 
 const section_content = document.querySelectorAll('.expand');
-const slide_content = document.querySelectorAll('.slide-transition');
+const slide_content = document.querySelectorAll('.slide-transition-animation');
 
 slide_content.forEach(section => {
     expand_observer.observe(section);

@@ -318,19 +318,51 @@ body::-webkit-scrollbar {
     padding: 10px 10px;
 }
 
-.slide-transition {
-    transform: translateX(-60vw);
+.slide-transition-animation {
+    transform: translateX(-30vw);
 }
 
 @keyframes slide{
     0% {
-        transform: translateX(-60vw);
+        transform: translateX(-30vw);
     }
     100% {
         transform: translateX(0);
     }
 }
 
-.slide-transition.visible {
-    animation: slide 0.75s ease-out 0.8s forwards;
+.slide-transition-animation.visible {
+    animation: slide 0.4s ease-out 0.2s forwards;
 }
+
+#contact-text-form {
+    width: 50vw;
+    height: 15vh;
+    resize: none;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+#input-field-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field{
+    background-color: #2c3848;
+    border: hidden;
+}
+
+#submit-button {
+    height: 50px;
+    width: 100px;
+}
+
+#submit-button.onclick {
+
+}
+
