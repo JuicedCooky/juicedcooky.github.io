@@ -16,6 +16,7 @@
         -->
         <!--<img src="images/background.jpg" id="background-image"/>-->
         <div class="scroll-container">
+
             <section class="scroll-section" id="section-1">
                 <div class="scroll-section-animation expand">
                     <ul id="topbar">
@@ -53,6 +54,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="scroll-section" id="section-2">
                 <div class="scroll-section-animation expand">
                     <p style="font-size: 70px">About Me</p>
@@ -71,6 +73,7 @@
                     </ul>
                 </div>
             </section>
+
             <section class="scroll-section" id="section-3">
                 <div class="scroll-section-animation expand">
 
@@ -79,8 +82,8 @@
                         <div class="slide-container">
                             <button class="previous" onclick="nextSlide(-1)">
                                 <svg height="50" width="50" id="previous-svg">
-                                    <circle cx="25" cy="25" r="20" stroke="gray" stroke-width="2" fill="transparent" id="next-circle"/>
-                                    <path fill="black"
+                                    <circle cx="25" cy="25" r="20" stroke="rgba(61, 63, 113, 0.83)" stroke-width="2" fill="rgba(66, 66, 66, 0.83)" id="next-circle"/>
+                                    <path fill="white"
                                           d="M 30 24 L 22 24 L 23 21 L 19 25 L 23 29 L 22 26 L 30 26 Z"></path>
                                 </svg>
                             </button>
@@ -95,8 +98,8 @@
                                 </div>
                             <button class="next" onclick="nextSlide(1)">
                                 <svg height="50" width="50" id="next-svg">
-                                    <circle cx="25" cy="25" r="20" stroke="gray" stroke-width="2" fill="transparent" id="previous-circle"/>
-                                    <path fill="black"
+                                    <circle cx="25" cy="25" r="20" stroke="rgba(61, 63, 113, 0.83)" stroke-width="2" fill="rgba(66, 66, 66, 0.83)" id="previous-circle"/>
+                                    <path fill="white"
                                           d="M 19 26 L 27 26 L 26 29 L 30 25 L 26 21 L 27 24 L 19 24 Z"></path>
                                 </svg>
                             </button>
@@ -108,9 +111,13 @@
                     </div>
                 </div>
             </section>
+
             <section class="scroll-section" id="section-4">
                 <div id="input-field-container">
-                    <textarea id="contact-text-form" class="input-field"></textarea>
+                    <p>Contact Me</p>
+                    <textarea id="name-text-form" class="input-field" placeholder="Name"></textarea>
+                    <textarea id="email-text-form" class="input-field" placeholder="Email"></textarea>
+                    <textarea id="contact-text-form" class="input-field" placeholder="Message"></textarea>
                     <input type="submit" value="submit" class="input-field" id="submit-button">
                 </div>
             </section>

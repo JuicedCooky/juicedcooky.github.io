@@ -80,7 +80,18 @@ html{
 
 body, html {
     overflow-y: auto;
+    overflow: hidden;
     scrollbar-width: none;
+}
+
+#background {
+    background-color: black;
+    position: fixed;
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 0;
+    top: 0;
+    left: 0;
 }
 
 .scroll-container.snap-disabled{
@@ -186,7 +197,8 @@ body::-webkit-scrollbar {
 }
 
 .projects {
-    padding-left: 2.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     justify-content: left;
     display: flex;
 }
@@ -198,6 +210,7 @@ body::-webkit-scrollbar {
     padding-left: 2vw;
 }
 #project-text-container {
+    padding-left: 5vw;
 }
 .slide {
     display: none;
@@ -240,12 +253,12 @@ body::-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0);
 }
 .previous {
-    left: 0;
+    left: -5vw;
     border: hidden;
 }
 
 .next {
-    right: 0;
+    right: -5vw;
     border: hidden;
 }
 
@@ -262,10 +275,15 @@ body::-webkit-scrollbar {
     stroke: indianred !important;
 }
 */
-#next-svg:hover circle, #previous-svg:hover circle{
-    stroke: indianred !important;
+
+#next-svg, #previous-svg{
 }
 
+#next-svg:hover circle, #previous-svg:hover circle{
+    stroke: indianred !important;
+    /*background: aliceblue;*/
+    /*rgba(36, 70, 80, 0.83);*/
+}
 .point {
     width: 5px;
     height: 5px;
@@ -280,15 +298,7 @@ body::-webkit-scrollbar {
     background-color: transparent;
 }
 
-#background {
-    background-color: black;
-    position: absolute;
-    height: 100dvh;
-    width: 100dvw;
-    z-index: 0;
-    top: 0;
-    left: 0;
-}
+
 
 @keyframes expand {
     0% {
@@ -338,9 +348,6 @@ body::-webkit-scrollbar {
 #contact-text-form {
     width: 50vw;
     height: 15vh;
-    resize: none;
-    font-size: 20px;
-    color: aliceblue;
 }
 
 #input-field-container {
@@ -354,7 +361,14 @@ body::-webkit-scrollbar {
 
 .input-field{
     background-color: #2c3848;
+    resize: none;
+    font-size: 20px;
+    color: aliceblue;
     border: hidden;
+}
+
+#name-text-form, email-text-form{
+
 }
 
 #submit-button {

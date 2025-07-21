@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const y_scroll = target_location.offsetTop;
 
-                scrollTo(container, y_scroll, 1800);
+                scrollTo(container, y_scroll, 1000);
             });
         });
         document.querySelectorAll(".dot").forEach(link => {
