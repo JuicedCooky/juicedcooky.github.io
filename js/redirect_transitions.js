@@ -1,3 +1,5 @@
+const transition_speed = 1000;
+
 function scrollTo(container, y, duration){
     container.classList.add('snap-disabled');
 
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const y_scroll = target_location.offsetTop;
 
-                scrollTo(container, y_scroll, 1000);
+                scrollTo(container, y_scroll, transition_speed);
             });
         });
         document.querySelectorAll(".dot").forEach(link => {
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const y_scroll = target_location.offsetTop;
 
-                scrollTo(container, y_scroll, 1800);
+                scrollTo(container, y_scroll, transition_speed);
             });
         });
     }
