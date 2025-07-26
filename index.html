@@ -28,7 +28,8 @@
                                 <li><a href="#section-1" class="main-buttons">Home</a></li>
                                 <li><a href="#section-2" class="main-buttons">About</a></li>
                                 <li><a href="#section-3" class="main-buttons">Projects</a></li>
-                                <li><a href="#section-4" class="main-buttons">Links</a></li>
+                                <li><a href="#section-4" class="main-buttons">Contact</a></li>
+                                <li><a href="#section-5" class="main-buttons">Links</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -121,13 +122,34 @@
                     <input type="submit" value="submit" class="input-field" id="submit-button">
                 </div>
             </section>
+
+            <section class="scroll-section" id="section-5">
+                <p>Email: alanzheng2004@outlook.com</p>
+            </section>
         </div>
 
+
         <nav id="scroll-bar">
-            <a class="dot active" href="#section-1" id="dot-1"></a>
-            <a class="dot" href="#section-2" id="dot-2"></a>
-            <a class="dot" href="#section-3" id="dot-3"></a>
-            <a class="dot" href="#section-4" id="dot-4"></a>
+            <div class="dot-name">
+                <p class="dot-text">Home</p>
+                <a class="dot active" href="#section-1" id="dot-1"></a>
+            </div>
+            <div class="dot-name">
+                <p class="dot-text">About</p>
+                <a class="dot" href="#section-2" id="dot-2"></a>
+            </div>
+            <div class="dot-name">
+                <p class="dot-text">Projects</p>
+                <a class="dot" href="#section-3" id="dot-3"></a>
+            </div>
+            <div class="dot-name">
+                <p class="dot-text">Contact</p>
+                <a class="dot" href="#section-4" id="dot-4"></a>
+            </div>
+            <div class="dot-name">
+                <p class="dot-text">Link</p>
+                <a class="dot" href="#section-5" id="dot-5"></a>
+            </div>
         </nav>
     </div>
     <div id="points-container"></div>
@@ -138,6 +160,8 @@
     <script src="js/redirect_transitions.js"></script>
     <script src="js/slideshow.js"></script>
     <script src="js/interactable_points.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/submit_form.js"></script>
 </body>
 
 </html>

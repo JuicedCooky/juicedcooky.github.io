@@ -132,6 +132,7 @@ body::-webkit-scrollbar {
     display: block;
     transition: transform .35s;
     transform: scaleY(1);
+    /*padding-left: 5px;*/
 }
 
 .dot.active {
@@ -380,3 +381,15 @@ body::-webkit-scrollbar {
 
 }
 
+.dot-name {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.dot-text {
+    font-size: 14px;
+    margin: 0;
+
+    padding-right: 7px;
+}
